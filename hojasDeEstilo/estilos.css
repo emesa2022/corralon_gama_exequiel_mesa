@@ -1,5 +1,5 @@
 /*----------------------- Reset ---------------------------*/
-*{
+* {
     padding: 0;
     margin: 0;
     font-family: 'Josefin Sans', sans-serif;
@@ -7,161 +7,177 @@
 }
 
 /*------------------------ INDEX GRID --------------------------- */
-.contenedorIndex{
+.contenedorIndex {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-    "header header"
-    "nav nav"
-    "main main"
-    "footer footer";
+    grid-template-areas:
+        "header header"
+        "nav nav"
+        "main main"
+        "footer footer";
     background-image: url("../multimedia/FontoPrincipal.png");
-    background-size: cover; 
+    background-size: cover;
 }
 
 /*------------------------ HEADER GRID --------------------------- */
-.header{
+.header {
     grid-area: header;
     height: 100px;
     background-color: #750008;
-    padding:20px;
+    padding: 20px;
 }
 
-.logo img{
+.logo img {
     height: 100px;
-    width:auto;
+    width: auto;
 }
+
+.logo img:hover {
+    animation-duration: 0.7s;
+    transition: 1s;
+    transform: rotateY(360deg);
+}
+
+
+
 
 /*------------------------ NAV GRID --------------------------- */
-.nav{
+.nav {
     grid-area: nav;
     background-color: #B0000C;
     position: sticky;
     top: 0px;
     text-align: right;
     padding: 20px;
+
 }
-.nav a{
+
+.nav a {
     display: inline-block;
-    padding:5px 25px; 
-    font-size:18px;
-    text-decoration:none;
+    padding: 5px 25px;
+    font-size: 18px;
+    text-decoration: none;
 }
 
-.nav ul{
+.nav ul {
     list-style: none;
+    transform: rotateX(360deg);
+    transition: 1s;
 }
 
-.nav ul a:hover{
+.nav ul a:hover {
     background-color: #6B181D;
     box-shadow: 0px 3px 20px 3px #0c141d;
+    transition: 0.7s;
+
 }
 
 /*---------------------- Header ---------------------------*/
-#contenedorLogo{
+#contenedorLogo {
     height: 100px;
     background-color: #750008;
-    padding:30px;
-   
+    padding: 30px;
+
 }
 
-.logo{
+.logo {
     height: 100px;
-    width:auto;
+    width: auto;
 }
 
 /*------------------------ Nav --------------------------- */
-.contenedorMenu{
+.contenedorMenu {
     text-align: right;
     padding: 20px;
-    
+
 }
-nav{
+
+nav {
     background-color: #B0000C;
     position: sticky;
     top: 0px;
 }
 
-nav a{
+nav a {
     display: inline-block;
-    padding:5px 25px; 
-    font-size:18px;
-    text-decoration:none;
+    padding: 5px 25px;
+    font-size: 18px;
+    text-decoration: none;
 }
 
-nav ul{
+nav ul {
     list-style: none;
 }
 
-ul a:hover{
+ul a:hover {
     background-color: #6B181D;
     box-shadow: 0px 3px 20px 3px #0c141d;
 }
 
 /* ------------ MAIN INDEX GRID --------------- */
 
-.main{
+.main {
     grid-area: main;
     text-align: center;
 
 }
 
-.main section h2{
+.main section h2 {
     padding: 20px;
 }
 
-.titulo{
-    background-color: rgba(0, 0, 0,70%);
+.titulo {
+    background-color: rgba(0, 0, 0, 70%);
     padding: 20px;
     margin: 10px 10%;
 }
 
-.galeriaFotos img{
+.galeriaFotos img {
     height: 10%;
     width: 40%;
 }
 
-.descripcion h3{
+.descripcion h3 {
     font-size: 17px;
 }
 
- .descripcion .contenedorDescIndex{
+.descripcion .contenedorDescIndex {
     height: 150px;
     margin: 0 10%;
     padding: 20px;
-    background-color: rgba(66, 14, 18,50%);
+    background-color: rgba(66, 14, 18, 50%);
     overflow: auto;
 }
 
 
 /*------------------------ MAIN GRID QUIENES SOMOS --------------------------- */
 
-.contenedorQuienesSomos{
+.contenedorQuienesSomos {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-    "header header"
-    "nav nav"
-    "main main"
-    "footer footer";
+    grid-template-areas:
+        "header header"
+        "nav nav"
+        "main main"
+        "footer footer";
 }
 
-#contenedorPrincipalNosotros{
+#contenedorPrincipalNosotros {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-    "subTituloNosotros subTituloNosotros"
-    "videoNosotros contenedorDesc"
-    "subTituloNosotrosButton subTituloNosotrosButton"
+    grid-template-areas:
+        "subTituloNosotros subTituloNosotros"
+        "videoNosotros contenedorDesc"
+        "subTituloNosotrosButton subTituloNosotrosButton"
     ;
     background-color: rgba(197, 197, 197, 0.979);
 }
 
-.mainQuienSomos{
+.mainQuienSomos {
     grid-area: main;
 }
 
-section .subTituloNosotros{
+section .subTituloNosotros {
     grid-area: subTituloNosotros;
     background-color: rgba(0, 0, 0, 70%);
     padding: 20px;
@@ -170,33 +186,33 @@ section .subTituloNosotros{
 }
 
 
-.videoNosotros{
+.videoNosotros {
     grid-area: videoNosotros;
 }
 
-.videoNosotros iframe{
+.videoNosotros iframe {
     margin: 20px 0px 20px 25%;
 }
 
-section .contenedorDesc{
+section .contenedorDesc {
     grid-area: contenedorDesc;
     margin: 20px 30% 20px 0;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.342);
 }
 
-.contenedorDesc p{
+.contenedorDesc p {
     line-height: 30px;
     font-size: 22px;
 }
 
-.contenedorDesc .entreTexto{
+.contenedorDesc .entreTexto {
     font-style: italic;
     background-color: #0c141d;
     padding: auto;
 }
 
-.subTituloNosotrosButton{
+.subTituloNosotrosButton {
     grid-area: subTituloNosotrosButton;
     background-color: rgba(0, 0, 0, 70%);
     padding: 20px;
@@ -205,71 +221,76 @@ section .contenedorDesc{
 }
 
 /*------------------------ GALERIA GRID --------------------------- */
-.contenedorGaleria{
+.contenedorGaleria {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: 
-    "header header"
-    "nav nav"
-    "main main"
-    "footer footer";
+    grid-template-areas:
+        "header header"
+        "nav nav"
+        "main main"
+        "footer footer";
 }
 
 /*------------------------ MAIN GALERIA GRID --------------------------- */
-.mainGaleria{
+.mainGaleria {
     grid-area: main;
     background-color: rgba(197, 197, 197, 0.979);
 }
 
-.contenedorImagenes{
+.contenedorImagenes {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: 
-    "img1 img2"
-    "img3 img4"
-    "img5 img6";
+    grid-template-areas:
+        "img1 img2"
+        "img3 img4"
+        "img5 img6";
     grid-gap: 5px;
     padding: 20px;
 }
 
 
-.img{
+.img {
     border: 2px solid #fff;
     height: 400px;
     width: auto;
 }
 
-.img1{
+.img1 {
     grid-area: img1;
     background-image: url(../multimedia/Galeria/CorralonGAMA-004.jpg);
     background-size: cover;
     background-position: center;
 }
-.img2{
+
+.img2 {
     grid-area: img2;
     background-image: url(../multimedia/Galeria/CorralonGAMA-036.jpg);
     background-size: cover;
     background-position: center;
 }
-.img3{
+
+.img3 {
     grid-area: img3;
     background-image: url(../multimedia/Galeria/CorralonGAMA-119.jpg);
     background-size: cover;
     background-position: center;
 }
-.img4{
+
+.img4 {
     grid-area: img4;
     background-image: url(../multimedia/Galeria/CorralonGAMA-259.jpg);
     background-size: cover;
     background-position: center;
 }
-.img5{
+
+.img5 {
     grid-area: img5;
     background-image: url(../multimedia/Galeria/CorralonGAMA-361.jpg);
     background-size: cover;
     background-position: center;
 }
-.img6{
+
+.img6 {
     grid-area: img6;
     background-image: url(../multimedia/Galeria/CorralonGAMA-457.jpg);
     background-size: cover;
@@ -277,100 +298,100 @@ section .contenedorDesc{
 }
 
 /*------------------------ MAIN CONTACTO --------------------------- */
-.contenedorContacto{
+.contenedorContacto {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
-    "header header" 
-    "nav nav"
-    "main main"
-    "main main"
-    "footer footer"     ;
-     background-color: rgba(197, 197, 197, 0.979);
+        "header header"
+        "nav nav"
+        "main main"
+        "main main"
+        "footer footer";
+    background-color: rgba(197, 197, 197, 0.979);
 }
 
-#mainContacto{
+#mainContacto {
     grid-area: main;
 }
 
-section .banner{
+section .banner {
     padding-top: 20px;
 }
 
-.banner img{
+.banner img {
     max-height: 150px;
     width: 100%;
 }
 
-.contenedorPrincipal{
+.contenedorPrincipal {
     padding: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-    "ubicacion     formulario"
-    "contactoimg1  contactoimg2 "; 
+    grid-template-areas:
+        "ubicacion     formulario"
+        "contactoimg1  contactoimg2 ";
 }
 
-section .ubicacion{
+section .ubicacion {
     grid-area: ubicacion;
     margin: 0 auto;
     padding: 20px;
 }
 
-section .formulario{
+section .formulario {
     grid-area: formulario;
-   }
+}
 
 
-.formulario fieldset{
+.formulario fieldset {
     height: 450px;
     width: 200px;
     border-style: none;
 }
 
-section input{
+section input {
     display: block;
     margin: 5px 10px;
     padding: 10px 150px;
 }
 
-section textarea{
+section textarea {
     margin: 5px 10px;
     padding: 10px 122px 100px;
     text-align: left;
 }
 
-fieldset .boton{
+fieldset .boton {
     margin: 20px;
     display: inline;
-    padding: 10px 30px; 
+    padding: 10px 30px;
     border-radius: 10%;
     border: 1px solid black;
     box-shadow: 1px 2px 3px #0c141d;
     background-color: #B0000C;
 }
 
-.boton:hover{
+.boton:hover {
     background-color: #6B181D;
     color: white;
 }
 
-.contactoImg{
+.contactoImg {
     margin: 50px 100px;
 }
 
-.contactoImg1{
+.contactoImg1 {
     grid-area: contactoimg1;
 }
 
-.contactoImg2{
+.contactoImg2 {
     grid-area: contactoimg2;
 }
 
 
 
 /* ------------ FOOTER GRID --------------- */
-.footer{
+.footer {
     grid-area: footer;
     padding: 30px;
     border-top: 3px double white;
@@ -378,42 +399,57 @@ fieldset .boton{
     text-align: center;
 }
 
-.iconosRedes{
+.iconosRedes {
     padding: 20px;
-    
+
 }
 
-.iconosRedes i{
+.iconosRedes i {
     font-size: 25px;
     letter-spacing: 10px;
+    animation-duration: 2s;
+    animation-name: titilar;
+    animation-delay: 3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
 }
+@keyframes titilar {
+    0%{
+        opacity: 0; 
+     }
+ 
+    100%{
+        opacity: 1;
+        transform: rotateY(360deg);
+     }
+ }
 
 /* ------------------- MEDIA QUERYS ---------------- */
 
-@media (min-width: 640px){
-    .contenedorIndex{
-        grid-template-columns:5% 1fr 1fr 5%;
+@media (min-width: 640px) {
+    .contenedorIndex {
+        grid-template-columns: 5% 1fr 1fr 5%;
         grid-template-areas: "header header header header"
-        "nav nav nav nav"
-        ". main main ."
-        "footer footer footer footer";
+            "nav nav nav nav"
+            ". main main ."
+            "footer footer footer footer";
     }
 
-    .contenedorGaleria{
+    .contenedorGaleria {
         grid-template-columns: repeat(3, 1fr);
-        grid-template-areas: 
-        "header header header"
-        "nav nav nav"
-        "main main main"
-        "footer footer footer";
-        border: 2px solid black;}
+        grid-template-areas:
+            "header header header"
+            "nav nav nav"
+            "main main main"
+            "footer footer footer";
+        border: 2px solid black;
+    }
 
-        .contenedorImagenes{
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-areas: 
+    .contenedorImagenes {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
             "img1 img2 img3"
             "img4 img5 img6";
-        }    
+    }
 }
-
