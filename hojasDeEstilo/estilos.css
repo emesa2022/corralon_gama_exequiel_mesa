@@ -244,7 +244,7 @@ section .contenedorDesc {
         "img1 img2"
         "img3 img4"
         "img5 img6";
-    grid-gap: 5px;
+    grid-gap: 10px;
     padding: 20px;
 }
 
@@ -253,6 +253,13 @@ section .contenedorDesc {
     border: 2px solid #fff;
     height: 400px;
     width: auto;
+    -webkit-transition: 0.5s linear;
+    transition: 0.5s linear;
+}
+
+.img:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .img1 {
