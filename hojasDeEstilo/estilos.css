@@ -112,27 +112,28 @@
 
 .contenedorQuienesSomos {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-areas:
-        "header header"
-        "nav nav"
-        "main main"
-        "footer footer";
-}
-
-#contenedorPrincipalNosotros {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-        "subTituloNosotros subTituloNosotros"
-        "videoNosotros contenedorDesc"
-        "subTituloNosotrosButton subTituloNosotrosButton"
-    ;
-    background-color: rgba(197, 197, 197, 0.979);
+        "header"
+        "nav"
+        "main"
+        "footer";
 }
 
 .mainQuienSomos {
     grid-area: main;
+}
+
+#contenedorPrincipalNosotros {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "subTituloNosotros"
+        "videoNosotros"
+        "contenedorDesc"
+        "subTituloNosotrosButton"
+    ;
+    background-color: rgba(197, 197, 197, 0.979);
 }
 
 section .subTituloNosotros {
@@ -146,22 +147,24 @@ section .subTituloNosotros {
 
 .videoNosotros {
     grid-area: videoNosotros;
+    padding: 20px 20%;
 }
 
 .videoNosotros iframe {
-    margin: 20px 0px 20px 25%;
+    height: 200px;
+    width: auto;
 }
 
 section .contenedorDesc {
     grid-area: contenedorDesc;
-    margin: 20px 30% 20px 0;
+    margin: 20px 10% 20px;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.342);
 }
 
 .contenedorDesc p {
-    line-height: 30px;
-    font-size: 22px;
+    line-height: 20px;
+    font-size: 16px;
 }
 
 .contenedorDesc .entreTexto {
@@ -215,7 +218,7 @@ section .contenedorDesc {
     transition: 0.5s linear;
 }
 
-.img:hover{
+.img:hover {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
@@ -305,7 +308,7 @@ section .ubicacion {
     padding: 20px;
 }
 
-.ubicacion iframe{
+.ubicacion iframe {
     width: auto;
     height: 300px;
 }
@@ -363,15 +366,27 @@ fieldset .boton {
 }
 
 /* VIBRAR */
-.contactoImg:hover
-{
-	animation: 1s vibrar infinite;
+.contactoImg:hover {
+    animation: 1s vibrar infinite;
 }
 
-@keyframes vibrar
-{
-	5%, 25%, 45%, 65%, 85% { transform: translateX(-10px); }
-	15%, 35%, 55%, 75%, 95% { transform: translateX(10px); }
+@keyframes vibrar {
+
+    5%,
+    25%,
+    45%,
+    65%,
+    85% {
+        transform: translateX(-10px);
+    }
+
+    15%,
+    35%,
+    55%,
+    75%,
+    95% {
+        transform: translateX(10px);
+    }
 }
 
 
@@ -399,16 +414,17 @@ fieldset .boton {
     animation-direction: alternate;
     animation-iteration-count: infinite;
 }
+
 @keyframes titilar {
-    0%{
-        opacity: 0; 
-     }
- 
-    100%{
+    0% {
+        opacity: 0;
+    }
+
+    100% {
         opacity: 1;
         transform: rotateY(360deg);
-     }
- }
+    }
+}
 
 /* ------------------- MEDIA QUERYS ---------------- */
 
@@ -446,7 +462,8 @@ fieldset .boton {
             "nav nav"
             "main main"
             "main main"
-            "footer footer";}
+            "footer footer";
+    }
 
     .contenedorPrincipal {
         padding: 30px;
@@ -456,7 +473,8 @@ fieldset .boton {
             "ubicacion     formulario"
             "contactoimg1  contactoimg2 ";
     }
-    .ubicacion iframe{
+
+    .ubicacion iframe {
         width: 600px;
         height: 450px;
     }
@@ -469,5 +487,58 @@ fieldset .boton {
 
     .contactoImg {
         margin: 50px 100px;
+    }
+
+    .contenedorQuienesSomos {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "header header"
+            "nav nav"
+            "main main"
+            "footer footer";
+    }
+
+    #contenedorPrincipalNosotros {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "subTituloNosotros subTituloNosotros"
+            "videoNosotros contenedorDesc"
+            "subTituloNosotrosButton subTituloNosotrosButton"
+        ;
+    }
+
+    .videoNosotros {
+        padding: 20px 10%;
+        animation: 7s aparicion 1;
+        transform-origin: top left;
+    }
+
+    @keyframes aparicion {
+        0% {
+            opacity: 0;
+        }
+
+        50% {
+            opacity: 0.8;
+        }
+    }
+
+
+    .videoNosotros iframe {
+        margin: 0px 0px 0px 15%;
+        width: 700px;
+        height: 550px;
+    }
+
+    section .contenedorDesc {
+        grid-area: contenedorDesc;
+        margin: 20px 30% 20px 0;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.342);
+    }
+
+    .contenedorDesc p {
+        line-height: 30px;
+        font-size: 22px;
     }
 }
