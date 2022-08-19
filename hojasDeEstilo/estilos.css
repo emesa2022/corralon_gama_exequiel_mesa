@@ -19,6 +19,36 @@
     background-size: cover;
 }
 
+/* ----------------------HEADER BOOSTRAP--------------------- */
+.hIndex{
+    background-color: #700101;
+    padding: 20px;
+}
+
+/* ----------------------NAV BOOSTRAP--------------------- */
+
+.navbar{
+    letter-spacing: 2px;
+    box-shadow: 0px 0px 5px black;
+    background-color: #2e1919;
+}
+
+.nav-item{
+    padding: 5px 15px;
+}
+
+.nav-link{
+    transition: 0.6s;
+}
+
+.nav-link:hover{
+    transition: 0.6s;
+    transform: scale(1.1);
+}
+
+
+
+
 /*------------------------ HEADER GRID --------------------------- */
 .header {
     grid-area: header;
