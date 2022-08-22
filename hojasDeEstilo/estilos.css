@@ -46,6 +46,7 @@
     transform: scale(1.1);
 }
 
+/* ----------------------MAIN INDEX BOOSTRAP--------------------- */
 .mIndex{
     background-image: url(../multimedia/FontoPrincipal.png);
     background-size: cover;
@@ -92,7 +93,18 @@
     background-image: url(../multimedia/SalonVentas.jpg);
 }
 
+.titulo {
+    background-color: rgba(0, 0, 0, 70%);
+    padding: 20px;
+    margin: 10px 10%;
+}
 
+.contenedorDescIndex {
+    height: 150px;
+    padding: 20px;
+    background-color: rgba(66, 14, 18, 50%);
+    overflow: auto;
+}
 
 
 
@@ -151,37 +163,8 @@
 
 /* ------------ MAIN INDEX GRID --------------- */
 
-.main {
-    grid-area: main;
-    text-align: center;
 
-}
 
-.main section h2 {
-    padding: 20px;
-}
-
-.titulo {
-    background-color: rgba(0, 0, 0, 70%);
-    padding: 20px;
-    margin: 10px 10%;
-}
-
-.galeriaFotos img {
-    height: 10%;
-    width: 40%;
-}
-
-.descripcion h3 {
-    font-size: 17px;
-}
-
-.contenedorDescIndex {
-    height: 150px;
-    padding: 20px;
-    background-color: rgba(66, 14, 18, 50%);
-    overflow: auto;
-}
 
 
 /*------------------------ MAIN GRID QUIENES SOMOS --------------------------- */
@@ -269,77 +252,59 @@ section .contenedorDesc {
 }
 
 /*------------------------ MAIN GALERIA GRID --------------------------- */
-.mainGaleria {
-    grid-area: main;
-    background-color: rgba(197, 197, 197, 0.979);
-}
 
-.contenedorImagenes {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas:
-        "img1 img2"
-        "img3 img4"
-        "img5 img6";
-    grid-gap: 10px;
+.mGaleria{
+    background-color: #4b4c4d;
     padding: 20px;
 }
-
-
-.img {
-    border: 2px solid #fff;
+.imgGaleria {
+    border: 2px solid #4b4c4d;
     height: 400px;
-    width: auto;
     -webkit-transition: 0.5s linear;
     transition: 0.5s linear;
 }
 
-.img:hover {
+.imgGaleria:hover {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
 
-.img1 {
-    grid-area: img1;
+.imgGaleria1 {
     background-image: url(../multimedia/Galeria/CorralonGAMA-004.jpg);
     background-size: cover;
     background-position: center;
 }
 
-.img2 {
-    grid-area: img2;
+.imgGaleria2 {
     background-image: url(../multimedia/Galeria/CorralonGAMA-036.jpg);
     background-size: cover;
     background-position: center;
 }
 
-.img3 {
-    grid-area: img3;
+.imgGaleria3 {
     background-image: url(../multimedia/Galeria/CorralonGAMA-119.jpg);
     background-size: cover;
     background-position: center;
 }
 
-.img4 {
-    grid-area: img4;
+.imgGaleria4 {
     background-image: url(../multimedia/Galeria/CorralonGAMA-259.jpg);
     background-size: cover;
     background-position: center;
 }
 
-.img5 {
-    grid-area: img5;
+.imgGaleria5 {
     background-image: url(../multimedia/Galeria/CorralonGAMA-361.jpg);
     background-size: cover;
     background-position: center;
 }
 
-.img6 {
-    grid-area: img6;
+.imgGaleria6 {
     background-image: url(../multimedia/Galeria/CorralonGAMA-457.jpg);
     background-size: cover;
     background-position: center;
 }
+
 
 /*------------------------ MAIN CONTACTO --------------------------- */
 .contenedorContacto {
