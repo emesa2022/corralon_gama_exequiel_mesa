@@ -58,7 +58,7 @@
 .tituloIndex{
     background-color: rgba(0, 0, 0, 70%);
     padding: 10px;
-    margin: 30px 0 0 0;
+    margin-top: 30px;
 }
 
 .subtituloIndex{
@@ -168,88 +168,41 @@
 
 
 /*------------------------ MAIN GRID QUIENES SOMOS --------------------------- */
-
-.contenedorQuienesSomos {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-        "header"
-        "nav"
-        "main"
-        "footer";
-}
-
-.mainQuienSomos {
-    grid-area: main;
-}
-
-#contenedorPrincipalNosotros {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-        "subTituloNosotros"
-        "videoNosotros"
-        "contenedorDesc"
-        "subTituloNosotrosButton"
-    ;
+.mNosotros{
     background-color: rgba(197, 197, 197, 0.979);
+
 }
 
-section .subTituloNosotros {
-    grid-area: subTituloNosotros;
+.subTituloNosotros {
     background-color: rgba(0, 0, 0, 70%);
-    padding: 20px;
-    margin: 20px 10%;
-    text-align: center;
+    padding: 10px;
+    margin: 10px 0;
 }
 
 
-.videoNosotros {
-    grid-area: videoNosotros;
-    padding: 20px 20%;
-}
-
-.videoNosotros iframe {
-    height: 200px;
-    width: auto;
-}
-
-section .contenedorDesc {
-    grid-area: contenedorDesc;
-    margin: 20px 10% 20px;
-    padding: 20px;
+.contenedorDesc {
     background-color: rgba(0, 0, 0, 0.342);
+    padding: 10px;
+    margin-bottom: 10px;
 }
 
 .contenedorDesc p {
-    line-height: 20px;
+    line-height: 30px;
     font-size: 16px;
 }
 
 .contenedorDesc .entreTexto {
     font-style: italic;
     background-color: #0c141d;
-    padding: auto;
+    padding: 20px;
 }
 
 .subTituloNosotrosButton {
-    grid-area: subTituloNosotrosButton;
     background-color: rgba(0, 0, 0, 70%);
-    padding: 20px;
-    margin: 0 10% 20px;
-    text-align: center;
+    padding: 10px;
+    margin: 10px 0 10px;
 }
 
-/*------------------------ GALERIA GRID --------------------------- */
-.contenedorGaleria {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas:
-        "header header"
-        "nav nav"
-        "main main"
-        "footer footer";
-}
 
 /*------------------------ MAIN GALERIA GRID --------------------------- */
 
@@ -530,7 +483,7 @@ fieldset .boton {
         margin: 50px 100px;
     }
 
-    .contenedorQuienesSomos {
+    /* .contenedorQuienesSomos {
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
             "header header"
@@ -581,5 +534,5 @@ fieldset .boton {
     .contenedorDesc p {
         line-height: 30px;
         font-size: 22px;
-    }
+    } */
 }
