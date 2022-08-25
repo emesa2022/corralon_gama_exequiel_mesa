@@ -6,19 +6,6 @@
     color: white;
 }
 
-/*------------------------ INDEX GRID --------------------------- */
-.contenedorIndex {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-        "header header"
-        "nav nav"
-        "main main"
-        "footer footer";
-    background-image: url("../multimedia/FontoPrincipal.png");
-    background-size: cover;
-}
-
 /* ----------------------HEADER BOOSTRAP--------------------- */
 .hIndex{
     background-color: #700101;
@@ -106,8 +93,6 @@
     overflow: auto;
 }
 
-
-
 /*------------------------ HEADER GRID --------------------------- */
 .header {
     grid-area: header;
@@ -126,9 +111,6 @@
     transition: 1s;
     transform: rotateY(360deg);
 }
-
-
-
 
 /*------------------------ NAV GRID --------------------------- */
 .nav {
@@ -161,13 +143,7 @@
 
 }
 
-/* ------------ MAIN INDEX GRID --------------- */
-
-
-
-
-
-/*------------------------ MAIN GRID QUIENES SOMOS --------------------------- */
+/*------------------------ MAIN QUIENES SOMOS --------------------------- */
 .mNosotros{
     background-color: rgba(197, 197, 197, 0.979);
 
@@ -204,7 +180,7 @@
 }
 
 
-/*------------------------ MAIN GALERIA GRID --------------------------- */
+/*------------------------ MAIN GALERIA --------------------------- */
 
 .mGaleria{
     background-color: #4b4c4d;
@@ -217,9 +193,19 @@
     transition: 0.5s linear;
 }
 
+.imgGaleria p{
+    text-align: center;
+    background-color: #0c141d;
+    opacity: 0;
+}
+
 .imgGaleria:hover {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
+}
+
+.imgGaleria:hover p{
+    opacity: 1;
 }
 
 .imgGaleria1 {
@@ -483,56 +469,4 @@ fieldset .boton {
         margin: 50px 100px;
     }
 
-    /* .contenedorQuienesSomos {
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-            "header header"
-            "nav nav"
-            "main main"
-            "footer footer";
-    }
-
-    #contenedorPrincipalNosotros {
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-            "subTituloNosotros subTituloNosotros"
-            "videoNosotros contenedorDesc"
-            "subTituloNosotrosButton subTituloNosotrosButton"
-        ;
-    }
-
-    .videoNosotros {
-        padding: 20px 10%;
-        animation: 7s aparicion 1;
-        transform-origin: top left;
-    }
-
-    @keyframes aparicion {
-        0% {
-            opacity: 0;
-        }
-
-        50% {
-            opacity: 0.8;
-        }
-    }
-
-
-    .videoNosotros iframe {
-        margin: 0px 0px 0px 15%;
-        width: 700px;
-        height: 550px;
-    }
-
-    section .contenedorDesc {
-        grid-area: contenedorDesc;
-        margin: 20px 30% 20px 0;
-        padding: 20px;
-        background-color: rgba(0, 0, 0, 0.342);
-    }
-
-    .contenedorDesc p {
-        line-height: 30px;
-        font-size: 22px;
-    } */
 }
