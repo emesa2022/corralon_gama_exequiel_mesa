@@ -1,0 +1,474 @@
+/*----------------------- Reset ---------------------------*/
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+}
+
+/*----------------------- Variables ---------------------------*/
+$fondoPaginas: #c5c5c5fa;
+
+
+/* ----------------------HEADER BOOSTRAP--------------------- */
+.hIndex{
+    background-color: #700101;
+    padding: 20px;
+}
+
+/* ----------------------NAV BOOSTRAP--------------------- */
+
+.navbar{
+    letter-spacing: 2px;
+    box-shadow: 0px 0px 5px black;
+    background-color: #2e1919;
+}
+
+.nav-item{
+    padding: 5px 15px;
+}
+
+.nav-link{
+    transition: 0.6s;
+}
+
+.nav-link:hover{
+    transition: 0.6s;
+    transform: scale(1.1);
+}
+
+/* ----------------------MAIN INDEX BOOSTRAP--------------------- */
+.mIndex{
+    background-image: url(../multimedia/FontoPrincipal.png);
+    background-size: cover;
+    border-radius: 0;
+    margin: 0;
+    padding-top: 10px;
+}
+
+.tituloIndex{
+    background-color: rgba(0, 0, 0, 70%);
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.subtituloIndex{
+    padding: 20px;
+}
+
+.imgIndex{
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    border: 1px solid white;
+    -webkit-transition: 0.5s linear;
+    transition: 0.5s linear;
+}
+
+.imgIndex:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.imgIndex1{
+    background-image: url(../multimedia/Fachada.jpg);
+}
+.imgIndex2{
+    background-image: url(../multimedia/Fachada3.jpg);
+}
+
+.imgIndex3{
+    background-image: url(../multimedia/Fachada2.jpg);
+}
+.imgIndex4{
+    background-image: url(../multimedia/SalonVentas.jpg);
+}
+
+.titulo {
+    background-color: rgba(0, 0, 0, 70%);
+    padding: 20px;
+    margin: 10px 10%;
+}
+
+.contenedorDescIndex {
+    height: 150px;
+    padding: 20px;
+    background-color: rgba(66, 14, 18, 50%);
+    overflow: auto;
+}
+
+/*------------------------ HEADER GRID --------------------------- */
+.header {
+    grid-area: header;
+    height: 100px;
+    background-color: #750008;
+    padding: 20px;
+}
+
+.logo img {
+    height: 100px;
+    width: auto;
+}
+
+.logo img:hover {
+    animation-duration: 0.7s;
+    transition: 1s;
+    transform: rotateY(360deg);
+}
+
+/*------------------------ NAV GRID --------------------------- */
+.nav {
+    grid-area: nav;
+    background-color: #B0000C;
+    position: sticky;
+    top: 0px;
+    text-align: right;
+    padding: 20px;
+
+    a {
+        display: inline-block;
+        padding: 5px 25px;
+        font-size: 18px;
+        text-decoration: none;
+    }
+    ul {
+        list-style: none;
+        transform: rotateX(360deg);
+        transition: 1s;
+
+        a:hover {
+            background-color: #6B181D;
+            box-shadow: 0px 3px 20px 3px #0c141d;
+            transition: 0.7s;
+        
+        }
+    }
+}
+
+/*------------------------ MAIN QUIENES SOMOS --------------------------- */
+.mNosotros{
+    background-color: $fondoPaginas;
+
+}
+
+.subTituloNosotros {
+    background-color: rgba(0, 0, 0, 70%);
+    padding: 10px;
+    margin: 10px 0;
+}
+
+
+.contenedorDesc {
+    background-color: rgba(0, 0, 0, 0.342);
+    padding: 10px;
+    margin-bottom: 10px;
+
+    p {
+        line-height: 30px;
+        font-size: 16px;
+    }
+    .entreTexto {
+        font-style: italic;
+        background-color: #0c141d;
+        padding: 20px;
+    }
+}
+
+
+.subTituloNosotrosButton {
+    background-color: rgba(0, 0, 0, 70%);
+    padding: 10px;
+    margin: 10px 0 10px;
+}
+
+
+/*------------------------ MAIN GALERIA --------------------------- */
+
+.mGaleria{
+    background-color: $fondoPaginas;
+    padding: 20px;
+}
+.imgGaleria {
+    border: 2px solid #4b4c4d;
+    height: 400px;
+    -webkit-transition: 0.5s linear;
+    transition: 0.5s linear;
+
+    p{
+        text-align: center;
+        background-color: #0c141d;
+        opacity: 0;
+    }
+}
+
+
+.imgGaleria:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+
+    p{
+        opacity: 1;
+    }
+}
+
+.imgGaleria1 {
+    background-image: url(../multimedia/Galeria/CorralonGAMA-004.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.imgGaleria2 {
+    background-image: url(../multimedia/Galeria/CorralonGAMA-036.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.imgGaleria3 {
+    background-image: url(../multimedia/Galeria/CorralonGAMA-119.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.imgGaleria4 {
+    background-image: url(../multimedia/Galeria/CorralonGAMA-259.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.imgGaleria5 {
+    background-image: url(../multimedia/Galeria/CorralonGAMA-361.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.imgGaleria6 {
+    background-image: url(../multimedia/Galeria/CorralonGAMA-457.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+/*------------------------ MAIN CONTACTO --------------------------- */
+.contenedorContacto {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "main"
+        "footer";
+    background-color: $fondoPaginas;
+}
+
+#mainContacto {
+    grid-area: main;
+}
+
+section .banner {
+    padding-top: 20px;
+}
+
+.banner img {
+    max-height: 150px;
+    width: 100%;
+}
+
+.contenedorPrincipal {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 400px;
+    grid-template-areas:
+        "ubicacion"
+        "formulario"
+        "contactoimg1"
+        "contactoimg2";
+}
+
+section .ubicacion {
+    grid-area: ubicacion;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.ubicacion iframe {
+    width: auto;
+    height: 300px;
+}
+
+section .formulario {
+    grid-area: formulario;
+}
+
+
+.formulario fieldset {
+    height: 450px;
+    width: auto;
+    border-style: none;
+}
+
+section input {
+    display: block;
+    margin: 5px 10px;
+    padding: 10px 150px;
+}
+
+section textarea {
+    margin: 5px 10px;
+    padding: 10px 122px 100px;
+    text-align: left;
+}
+
+fieldset .boton {
+    margin: 20px;
+    display: inline;
+    padding: 10px 30px;
+    border-radius: 10%;
+    border: 1px solid black;
+    box-shadow: 1px 2px 3px #0c141d;
+    background-color: #B0000C;
+    transition: 0.8s;
+}
+
+.boton:hover {
+    background-color: #6B181D;
+    color: white;
+    transition: 0.8s;
+}
+
+.contactoImg {
+    margin: 50px 10%;
+}
+
+.contactoImg1 {
+    grid-area: contactoimg1;
+}
+
+.contactoImg2 {
+    grid-area: contactoimg2;
+}
+/* VIBRAR */
+.contactoImg:hover {
+    animation: 1s vibrar infinite;
+}
+
+@keyframes vibrar {
+
+    5%,
+    25%,
+    45%,
+    65%,
+    85% {
+        transform: translateX(-10px);
+    }
+
+    15%,
+    35%,
+    55%,
+    75%,
+    95% {
+        transform: translateX(10px);
+    }
+}
+
+
+
+/* ------------ FOOTER GRID --------------- */
+.footer {
+    grid-area: footer;
+    padding: 30px;
+    border-top: 3px double white;
+    background-color: rgb(34, 34, 34);
+    text-align: center;
+}
+
+.iconosRedes {
+    padding: 20px;
+
+}
+
+.iconosRedes i {
+    font-size: 25px;
+    letter-spacing: 10px;
+    animation-duration: 2s;
+    animation-name: titilar;
+    animation-delay: 3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes titilar {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        transform: rotateY(360deg);
+    }
+}
+
+/* ------------------- MEDIA QUERYS ---------------- */
+
+@media (min-width: 640px) {
+    .contenedorIndex {
+        grid-template-columns: 5% 1fr 1fr 5%;
+        grid-template-areas: "header header header header"
+            "nav nav nav nav"
+            ". main main ."
+            "footer footer footer footer";
+    }
+
+    .contenedorGaleria {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "header header header"
+            "nav nav nav"
+            "main main main"
+            "footer footer footer";
+        border: 2px solid black;
+    }
+
+    .contenedorImagenes {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "img1 img2 img3"
+            "img4 img5 img6";
+    }
+
+    .contenedorContacto {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "header header"
+            "nav nav"
+            "main main"
+            "main main"
+            "footer footer";
+    }
+
+    .contenedorPrincipal {
+        padding: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "ubicacion     formulario"
+            "contactoimg1  contactoimg2 ";
+    }
+
+    .ubicacion iframe {
+        width: 600px;
+        height: 450px;
+    }
+
+    .formulario fieldset {
+        height: 450px;
+        width: 200px;
+        border-style: none;
+    }
+
+    .contactoImg {
+        margin: 50px 100px;
+    }
+
+}
