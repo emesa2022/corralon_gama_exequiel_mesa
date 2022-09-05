@@ -56,33 +56,22 @@ $fondoPaginas: #c5c5c5fa;
     padding: 20px;
 }
 
-.imgIndex{
-    background-size: cover;
-    background-position: center;
-    height: 300px;
-    border: 1px solid white;
-    -webkit-transition: 0.5s linear;
-    transition: 0.5s linear;
-}
-
 .imgIndex:hover{
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
 
-.imgIndex1{
-    background-image: url(../multimedia/Fachada.jpg);
-}
-.imgIndex2{
-    background-image: url(../multimedia/Fachada3.jpg);
-}
-
-.imgIndex3{
-    background-image: url(../multimedia/Fachada2.jpg);
-}
-.imgIndex4{
-    background-image: url(../multimedia/SalonVentas.jpg);
-}
+@each $fIndex in Fachada , Fachada3 , Fachada2 , SalonVentas{
+    .#{$fIndex}{
+        background-image: url("../multimedia/#{$fIndex}.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 300px;
+        border: 1px solid white;
+        -webkit-transition: 0.5s linear;
+        transition: 0.5s linear;
+    }
+} 
 
 .titulo {
     background-color: rgba(0, 0, 0, 70%);
@@ -204,50 +193,21 @@ $fondoPaginas: #c5c5c5fa;
 
 .imgGaleria:hover {
     -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+    transform: scale(1.05);
 
     p{
         opacity: 1;
     }
 }
 
-.imgGaleria1 {
-    background-image: url(../multimedia/Galeria/CorralonGAMA-004.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.imgGaleria2 {
-    background-image: url(../multimedia/Galeria/CorralonGAMA-036.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.imgGaleria3 {
-    background-image: url(../multimedia/Galeria/CorralonGAMA-119.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.imgGaleria4 {
-    background-image: url(../multimedia/Galeria/CorralonGAMA-259.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.imgGaleria5 {
-    background-image: url(../multimedia/Galeria/CorralonGAMA-361.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.imgGaleria6 {
-    background-image: url(../multimedia/Galeria/CorralonGAMA-457.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-
+@each $iGaleria in "004" , "036" , "119" , "259" , "361" , "457" {
+        .imgGaleria#{$iGaleria}{
+            background-image: url("../multimedia/Galeria/CorralonGAMA-#{$iGaleria}.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+    }
+    
 /*------------------------ MAIN CONTACTO --------------------------- */
 .contenedorContacto {
     display: grid;

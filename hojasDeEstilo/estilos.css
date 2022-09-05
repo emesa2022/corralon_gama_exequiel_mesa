@@ -52,7 +52,13 @@
   padding: 20px;
 }
 
-.imgIndex {
+.imgIndex:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.Fachada {
+  background-image: url("../multimedia/Fachada.jpg");
   background-size: cover;
   background-position: center;
   height: 300px;
@@ -61,25 +67,34 @@
   transition: 0.5s linear;
 }
 
-.imgIndex:hover {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+.Fachada3 {
+  background-image: url("../multimedia/Fachada3.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  border: 1px solid white;
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
 }
 
-.imgIndex1 {
-  background-image: url(../multimedia/Fachada.jpg);
+.Fachada2 {
+  background-image: url("../multimedia/Fachada2.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  border: 1px solid white;
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
 }
 
-.imgIndex2 {
-  background-image: url(../multimedia/Fachada3.jpg);
-}
-
-.imgIndex3 {
-  background-image: url(../multimedia/Fachada2.jpg);
-}
-
-.imgIndex4 {
-  background-image: url(../multimedia/SalonVentas.jpg);
+.SalonVentas {
+  background-image: url("../multimedia/SalonVentas.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  border: 1px solid white;
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
 }
 
 .titulo {
@@ -192,44 +207,44 @@
 
 .imgGaleria:hover {
   -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 .imgGaleria:hover p {
   opacity: 1;
 }
 
-.imgGaleria1 {
-  background-image: url(../multimedia/Galeria/CorralonGAMA-004.jpg);
+.imgGaleria004 {
+  background-image: url("../multimedia/Galeria/CorralonGAMA-004.jpg");
   background-size: cover;
   background-position: center;
 }
 
-.imgGaleria2 {
-  background-image: url(../multimedia/Galeria/CorralonGAMA-036.jpg);
+.imgGaleria036 {
+  background-image: url("../multimedia/Galeria/CorralonGAMA-036.jpg");
   background-size: cover;
   background-position: center;
 }
 
-.imgGaleria3 {
-  background-image: url(../multimedia/Galeria/CorralonGAMA-119.jpg);
+.imgGaleria119 {
+  background-image: url("../multimedia/Galeria/CorralonGAMA-119.jpg");
   background-size: cover;
   background-position: center;
 }
 
-.imgGaleria4 {
-  background-image: url(../multimedia/Galeria/CorralonGAMA-259.jpg);
+.imgGaleria259 {
+  background-image: url("../multimedia/Galeria/CorralonGAMA-259.jpg");
   background-size: cover;
   background-position: center;
 }
 
-.imgGaleria5 {
-  background-image: url(../multimedia/Galeria/CorralonGAMA-361.jpg);
+.imgGaleria361 {
+  background-image: url("../multimedia/Galeria/CorralonGAMA-361.jpg");
   background-size: cover;
   background-position: center;
 }
 
-.imgGaleria6 {
-  background-image: url(../multimedia/Galeria/CorralonGAMA-457.jpg);
+.imgGaleria457 {
+  background-image: url("../multimedia/Galeria/CorralonGAMA-457.jpg");
   background-size: cover;
   background-position: center;
 }
