@@ -15,96 +15,113 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <title>Contacto</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="../hojasDeEstilo/estilos.css">
 </head>
 
 <body>
-    <div class="contenedorContacto">
-        <!-- ------------ HEADER ----------------->
-        <header class="header">
+    <!------------------------------HEADER BOOSTRAP---------------------------------->
+    <header>
+        <div class="hIndex col-xs-12">
             <div class="logo">
-                <a href="../index.html"><img src="../multimedia/Logos/logoBlanco.png" alt="Logo-principal"></a>
+                <a href="./index.html"><img src="../multimedia/Logos/logoBlanco.png" alt="Logo-principal"></a>
             </div>
-        </header>
-        <!-------------- NAV ----------------->
-        <nav class="nav">
-            <ul type="square">
-                <a href="../index.html">
-                    <li>Inicio</li>
-                </a>
-                <a href="./quienesSomos.html">
-                    <li>Quienes Somos</li>
-                </a>
-                <a href="./galeria.html">
-                    <li>Galeria</li>
-                </a>
-                <a href="#">
-                    <li>Contacto</li>
-                </a>
+        </div>
+    </header>
+    <!------------------------------NAV BOOSTRAP---------------------------------->
+    <nav class="navbar navbar-expand-md navbar-dark">
+
+        <!-- Boton Hamburguesa -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- listado menu -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./quienesSomos.html">Quienes Somos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Galeria</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contacto.html">Contacto</a>
+                </li>
             </ul>
-        </nav>
-
-        <!-- ------------ MAIN ----------------->
-
-        <main id="mainContacto">
-            <section class="">
-                <div class="banner">
-                    <img src="../multimedia/Fondos/GAMAfondotop.jpg" alt="">
+        </div>
+    </nav>
+    <!------------------------------MAIN BOOSTRAP---------------------------------->
+    <div class="container-fluid mContacto">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="ubicacion">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13621.80191855078!2d-64.2391777!3d-31.4017124!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb3f3845a0dca74be!2sEl%20Corral%C3%B3n%20de%20GAMA%20%7C%20GAMA%20S.A.!5e0!3m2!1ses!2sar!4v1657915436937!5m2!1ses!2sar"
+                        style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                <div class="contenedorPrincipal">
-                    <div class="ubicacion">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13621.80191855078!2d-64.2391777!3d-31.4017124!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb3f3845a0dca74be!2sEl%20Corral%C3%B3n%20de%20GAMA%20%7C%20GAMA%20S.A.!5e0!3m2!1ses!2sar!4v1657915436937!5m2!1ses!2sar"
-                            style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                    <div class="formulario">
-                        <form action="Enviado">
-                            <fieldset>
-                                <legend>
-                                    <h4>Completa con tus datos</h4>
-                                </legend>
-
-                                <input class="campo" type="text" name="nombre" placeholder="Ingrese su Nombre" required>
-
-                                <input class="campo" type="text" name="apellido" placeholder="Ingrese su Apellido"
-                                    required>
-
-                                <input class="campo" type="email" name="correo" placeholder="Ingrese su Email" required>
-
-                                <textarea name="comentario" id="" cols="30" rows="5"></textarea>
-
-                                <input class="boton" type="submit" value="Enviar">
-                                <input class="boton" type="Reset">
-                            </fieldset>
-                        </form>
-                    </div>
-                    <div class="contactoImg contactoImg1">
-                        <img class="" src="../multimedia/Contacto/Contacto1.png" alt="Contacto 1">
-                    </div>
-                    <div class="contactoImg contactoImg2">
-                        <img class="" src="../multimedia/Contacto/telefono1.png" alt="Contacto 2">
-                    </div>
+                <div class="contactoImg contactoImg1">
+                    <img class="" src="../multimedia/Contacto/Contacto1.png" alt="Contacto 1">
                 </div>
-            </section>
-        </main>
-        <!-------------- FOOTER ----------------->
-        <footer class="footer">
-            <strong>
-                CORRALON DE GAMA S.A.<br />
-                Corralon de Materiales<br />
-                Duarte Quirós esq. Sagrada Familia Córdoba<br />
-                Tel: (0351) 4418600<br />
-                L a V: 9 a 18hs | Sáb: 9 a 13hs
-            </strong>
-
-            <div class="iconosRedes">
-                <a href="https://www.facebook.com/ElCorralonDeGama/"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.youtube.com/user/portalgama"><i class="fa-brands fa-youtube"></i></a>
             </div>
-        </footer>
+            <div class="col-sm-6">
+                <div class="formulario">
+                    <form action="Enviado">
+                        <fieldset>
+                            <legend>
+                                <h4>Completa con tus datos</h4>
+                            </legend>
+
+                            <input class="campo" type="text" name="nombre" placeholder="Ingrese su Nombre" required>
+
+                            <input class="campo" type="text" name="apellido" placeholder="Ingrese su Apellido" required>
+
+                            <input class="campo" type="email" name="correo" placeholder="Ingrese su Email" required>
+
+                            <textarea name="comentario" id="" cols="30" rows="5"></textarea>
+
+                            <input class="boton" type="submit" value="Enviar">
+                            <input class="boton" type="Reset">
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="contactoImg contactoImg2">
+                    <img class="" src="../multimedia/Contacto/telefono1.png" alt="Contacto 2">
+                </div>
+            </div>
+        </div>
     </div>
+    <!-------------- FOOTER ----------------->
+    <footer class="footer col-sm-12">
+        <strong>
+            CORRALON DE GAMA S.A.<br />
+            Corralon de Materiales<br />
+            Duarte Quirós esq. Sagrada Familia Córdoba<br />
+            Tel: (0351) 4418600<br />
+            L a V: 9 a 18hs | Sáb: 9 a 13hs
+        </strong>
+        <div class="iconosRedes">
+            <a href="https://www.facebook.com/ElCorralonDeGama/"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.youtube.com/user/portalgama"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+    </footer>
+
+    <!------------------------ SCRIPT BOOSTRAP -------------------------->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -248,15 +248,8 @@
 }
 
 /*------------------------ MAIN CONTACTO --------------------------- */
-.contenedorContacto {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-areas: "header" "nav" "main" "main" "footer";
+.mContacto {
   background-color: rgba(197, 197, 197, 0.9803921569);
-}
-
-#mainContacto {
-  grid-area: main;
 }
 
 section .banner {
@@ -268,48 +261,23 @@ section .banner {
   width: 100%;
 }
 
-.contenedorPrincipal {
-  padding: 30px;
-  display: grid;
-  grid-template-columns: 400px;
-  grid-template-areas: "ubicacion" "formulario" "contactoimg1" "contactoimg2";
-}
-
-section .ubicacion {
+.ubicacion {
   grid-area: ubicacion;
-  margin: 0 auto;
-  padding: 20px;
 }
-
 .ubicacion iframe {
-  width: auto;
   height: 300px;
 }
 
-section .formulario {
-  grid-area: formulario;
-}
-
-.formulario fieldset {
+fieldset {
   height: 450px;
-  width: auto;
   border-style: none;
 }
-
-section input {
+fieldset input {
   display: block;
   margin: 5px 10px;
   padding: 10px 150px;
 }
-
-section textarea {
-  margin: 5px 10px;
-  padding: 10px 122px 100px;
-  text-align: left;
-}
-
 fieldset .boton {
-  margin: 20px;
   display: inline;
   padding: 10px 30px;
   border-radius: 10%;
@@ -319,22 +287,16 @@ fieldset .boton {
   transition: 0.8s;
 }
 
+textarea {
+  margin: 5px 10px;
+  padding: 10px 122px 100px;
+  text-align: left;
+}
+
 .boton:hover {
   background-color: #6B181D;
   color: white;
   transition: 0.8s;
-}
-
-.contactoImg {
-  margin: 50px 10%;
-}
-
-.contactoImg1 {
-  grid-area: contactoimg1;
-}
-
-.contactoImg2 {
-  grid-area: contactoimg2;
 }
 
 /* VIBRAR */

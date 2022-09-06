@@ -208,20 +208,8 @@ $fondoPaginas: #c5c5c5fa;
     }
     
 /*------------------------ MAIN CONTACTO --------------------------- */
-.contenedorContacto {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-        "header"
-        "nav"
-        "main"
-        "main"
-        "footer";
+.mContacto{
     background-color: $fondoPaginas;
-}
-
-#mainContacto {
-    grid-area: main;
 }
 
 section .banner {
@@ -233,60 +221,43 @@ section .banner {
     width: 100%;
 }
 
-.contenedorPrincipal {
-    padding: 30px;
-    display: grid;
-    grid-template-columns: 400px;
-    grid-template-areas:
-        "ubicacion"
-        "formulario"
-        "contactoimg1"
-        "contactoimg2";
-}
-
-section .ubicacion {
+.ubicacion {
     grid-area: ubicacion;
-    margin: 0 auto;
-    padding: 20px;
+    // margin: 0 auto;
+    // padding: 20px;
+
+    iframe {
+        height: 300px;
+    }
 }
 
-.ubicacion iframe {
-    width: auto;
-    height: 300px;
-}
-
-section .formulario {
-    grid-area: formulario;
-}
-
-
-.formulario fieldset {
+fieldset {
     height: 450px;
-    width: auto;
+    // width: auto;
     border-style: none;
+
+    input {
+        display: block;
+        margin: 5px 10px;
+        padding: 10px 150px;
+    }
+
+    .boton {
+        // margin: 20px;
+        display: inline;
+        padding: 10px 30px;
+        border-radius: 10%;
+        border: 1px solid black;
+        box-shadow: 1px 2px 3px #0c141d;
+        background-color: #B0000C;
+        transition: 0.8s;
+    }
 }
 
-section input {
-    display: block;
-    margin: 5px 10px;
-    padding: 10px 150px;
-}
-
-section textarea {
+textarea {
     margin: 5px 10px;
     padding: 10px 122px 100px;
     text-align: left;
-}
-
-fieldset .boton {
-    margin: 20px;
-    display: inline;
-    padding: 10px 30px;
-    border-radius: 10%;
-    border: 1px solid black;
-    box-shadow: 1px 2px 3px #0c141d;
-    background-color: #B0000C;
-    transition: 0.8s;
 }
 
 .boton:hover {
@@ -296,15 +267,7 @@ fieldset .boton {
 }
 
 .contactoImg {
-    margin: 50px 10%;
-}
-
-.contactoImg1 {
-    grid-area: contactoimg1;
-}
-
-.contactoImg2 {
-    grid-area: contactoimg2;
+    // margin: 50px 10%;
 }
 /* VIBRAR */
 .contactoImg:hover {
