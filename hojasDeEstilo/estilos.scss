@@ -11,34 +11,34 @@ $fondoPaginas: #c5c5c5fa;
 
 
 /* ----------------------HEADER BOOSTRAP--------------------- */
-.hIndex{
+.hIndex {
     background-color: #700101;
     padding: 20px;
 }
 
 /* ----------------------NAV BOOSTRAP--------------------- */
 
-.navbar{
+.navbar {
     letter-spacing: 2px;
     box-shadow: 0px 0px 5px black;
     background-color: #2e1919;
 }
 
-.nav-item{
+.nav-item {
     padding: 5px 15px;
 }
 
-.nav-link{
+.nav-link {
     transition: 0.6s;
 }
 
-.nav-link:hover{
+.nav-link:hover {
     transition: 0.6s;
     transform: scale(1.1);
 }
 
 /* ----------------------MAIN INDEX BOOSTRAP--------------------- */
-.mIndex{
+.mIndex {
     background-image: url(../multimedia/FontoPrincipal.png);
     background-size: cover;
     border-radius: 0;
@@ -46,23 +46,26 @@ $fondoPaginas: #c5c5c5fa;
     padding-top: 10px;
 }
 
-.tituloIndex{
+.tituloIndex {
     background-color: rgba(0, 0, 0, 70%);
     padding: 10px;
     margin-top: 30px;
 }
 
-.subtituloIndex{
+.subtituloIndex {
     padding: 20px;
 }
 
-.imgIndex:hover{
+.imgIndex:hover {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
 
-@each $fIndex in Fachada , Fachada3 , Fachada2 , SalonVentas{
-    .#{$fIndex}{
+@each $fIndex in Fachada,
+Fachada3,
+Fachada2,
+SalonVentas {
+    .#{$fIndex} {
         background-image: url("../multimedia/#{$fIndex}.jpg");
         background-size: cover;
         background-position: center;
@@ -71,7 +74,7 @@ $fondoPaginas: #c5c5c5fa;
         -webkit-transition: 0.5s linear;
         transition: 0.5s linear;
     }
-} 
+}
 
 .titulo {
     background-color: rgba(0, 0, 0, 70%);
@@ -86,7 +89,7 @@ $fondoPaginas: #c5c5c5fa;
     overflow: auto;
 }
 
-/*------------------------ HEADER GRID --------------------------- */
+/*------------------------ HEADER --------------------------- */
 .header {
     grid-area: header;
     height: 100px;
@@ -105,7 +108,7 @@ $fondoPaginas: #c5c5c5fa;
     transform: rotateY(360deg);
 }
 
-/*------------------------ NAV GRID --------------------------- */
+/*------------------------ NAV --------------------------- */
 .nav {
     grid-area: nav;
     background-color: #B0000C;
@@ -120,6 +123,7 @@ $fondoPaginas: #c5c5c5fa;
         font-size: 18px;
         text-decoration: none;
     }
+
     ul {
         list-style: none;
         transform: rotateX(360deg);
@@ -129,13 +133,13 @@ $fondoPaginas: #c5c5c5fa;
             background-color: #6B181D;
             box-shadow: 0px 3px 20px 3px #0c141d;
             transition: 0.7s;
-        
+
         }
     }
 }
 
 /*------------------------ MAIN QUIENES SOMOS --------------------------- */
-.mNosotros{
+.mNosotros {
     background-color: $fondoPaginas;
 
 }
@@ -156,6 +160,7 @@ $fondoPaginas: #c5c5c5fa;
         line-height: 30px;
         font-size: 16px;
     }
+
     .entreTexto {
         font-style: italic;
         background-color: #0c141d;
@@ -172,17 +177,18 @@ $fondoPaginas: #c5c5c5fa;
 
 /*------------------------ MAIN GALERIA --------------------------- */
 
-.mGaleria{
+.mGaleria {
     background-color: $fondoPaginas;
     padding: 20px;
 }
+
 .imgGaleria {
     border: 2px solid #4b4c4d;
     height: 400px;
     -webkit-transition: 0.5s linear;
     transition: 0.5s linear;
 
-    p{
+    p {
         text-align: center;
         background-color: #0c141d;
         opacity: 0;
@@ -194,25 +200,30 @@ $fondoPaginas: #c5c5c5fa;
     -webkit-transform: scale(1.1);
     transform: scale(1.05);
 
-    p{
+    p {
         opacity: 1;
     }
 }
 
-@each $iGaleria in "004" , "036" , "119" , "259" , "361" , "457" {
-        .imgGaleria#{$iGaleria}{
-            background-image: url("../multimedia/Galeria/CorralonGAMA-#{$iGaleria}.jpg");
-            background-size: cover;
-            background-position: center;
-        }
+@each $iGaleria in "004",
+"036",
+"119",
+"259",
+"361",
+"457" {
+    .imgGaleria#{$iGaleria} {
+        background-image: url("../multimedia/Galeria/CorralonGAMA-#{$iGaleria}.jpg");
+        background-size: cover;
+        background-position: center;
     }
-    
+}
+
 /*------------------------ MAIN CONTACTO --------------------------- */
-.mContacto{
+.mContacto {
     background-color: $fondoPaginas;
 }
 
-section .banner {
+.banner {
     padding-top: 20px;
 }
 
@@ -222,42 +233,64 @@ section .banner {
 }
 
 .ubicacion {
-    grid-area: ubicacion;
-    // margin: 0 auto;
-    // padding: 20px;
+    overflow: hidden;
+
+    padding-bottom: 56.25%;
+
+    position: relative;
+
+    height: 0;
 
     iframe {
-        height: 300px;
+        left: 0;
+
+        top: 20px;
+
+        height: 100%;
+
+        width: 100%;
+
+        position: absolute;
     }
 }
 
-fieldset {
-    height: 450px;
-    // width: auto;
-    border-style: none;
+.formulario {
+    margin-top: 20px;
+    height: 500px;
+    width: 100%;
+}
 
-    input {
-        display: block;
-        margin: 5px 10px;
-        padding: 10px 150px;
+fieldset {
+    margin: 20px;
+    height: 100px;
+
+
+    h4 {
+        font-size: 16px;
     }
 
-    .boton {
-        // margin: 20px;
-        display: inline;
-        padding: 10px 30px;
-        border-radius: 10%;
-        border: 1px solid black;
-        box-shadow: 1px 2px 3px #0c141d;
-        background-color: #B0000C;
-        transition: 0.8s;
+    .campo {
+        display: block;
+        margin: 5px;
+        padding: 10px;
+        width: 70%;
     }
 }
 
 textarea {
-    margin: 5px 10px;
-    padding: 10px 122px 100px;
-    text-align: left;
+    margin: 5px;
+    width: 70%;
+}
+
+.boton {
+    display: inline;
+    width: 100px;
+    margin: 5px;
+    border-radius: 10%;
+    border: 1px solid black;
+    box-shadow: 1px 2px 3px #0c141d;
+    background-color: #B0000C;
+    transition: 0.8s;
 }
 
 .boton:hover {
@@ -267,8 +300,14 @@ textarea {
 }
 
 .contactoImg {
-    // margin: 50px 10%;
+
+    img {
+        height: 100%;
+        width: 80%;
+        margin: 5px 50px;
+    }
 }
+
 /* VIBRAR */
 .contactoImg:hover {
     animation: 1s vibrar infinite;
@@ -295,9 +334,8 @@ textarea {
 
 
 
-/* ------------ FOOTER GRID --------------- */
+/* ------------ FOOTER --------------- */
 .footer {
-    grid-area: footer;
     padding: 30px;
     border-top: 3px double white;
     background-color: rgb(34, 34, 34);
@@ -328,69 +366,4 @@ textarea {
         opacity: 1;
         transform: rotateY(360deg);
     }
-}
-
-/* ------------------- MEDIA QUERYS ---------------- */
-
-@media (min-width: 640px) {
-    .contenedorIndex {
-        grid-template-columns: 5% 1fr 1fr 5%;
-        grid-template-areas: "header header header header"
-            "nav nav nav nav"
-            ". main main ."
-            "footer footer footer footer";
-    }
-
-    .contenedorGaleria {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-areas:
-            "header header header"
-            "nav nav nav"
-            "main main main"
-            "footer footer footer";
-        border: 2px solid black;
-    }
-
-    .contenedorImagenes {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-areas:
-            "img1 img2 img3"
-            "img4 img5 img6";
-    }
-
-    .contenedorContacto {
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-            "header header"
-            "nav nav"
-            "main main"
-            "main main"
-            "footer footer";
-    }
-
-    .contenedorPrincipal {
-        padding: 30px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-            "ubicacion     formulario"
-            "contactoimg1  contactoimg2 ";
-    }
-
-    .ubicacion iframe {
-        width: 600px;
-        height: 450px;
-    }
-
-    .formulario fieldset {
-        height: 450px;
-        width: 200px;
-        border-style: none;
-    }
-
-    .contactoImg {
-        margin: 50px 100px;
-    }
-
 }

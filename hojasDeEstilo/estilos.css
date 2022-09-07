@@ -110,7 +110,7 @@
   overflow: auto;
 }
 
-/*------------------------ HEADER GRID --------------------------- */
+/*------------------------ HEADER --------------------------- */
 .header {
   grid-area: header;
   height: 100px;
@@ -129,7 +129,7 @@
   transform: rotateY(360deg);
 }
 
-/*------------------------ NAV GRID --------------------------- */
+/*------------------------ NAV --------------------------- */
 .nav {
   grid-area: nav;
   background-color: #B0000C;
@@ -252,7 +252,7 @@
   background-color: rgba(197, 197, 197, 0.9803921569);
 }
 
-section .banner {
+.banner {
   padding-top: 20px;
 }
 
@@ -262,24 +262,48 @@ section .banner {
 }
 
 .ubicacion {
-  grid-area: ubicacion;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
 }
 .ubicacion iframe {
-  height: 300px;
+  left: 0;
+  top: 20px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.formulario {
+  margin-top: 20px;
+  height: 500px;
+  width: 100%;
 }
 
 fieldset {
-  height: 450px;
-  border-style: none;
+  margin: 20px;
+  height: 100px;
 }
-fieldset input {
+fieldset h4 {
+  font-size: 16px;
+}
+fieldset .campo {
   display: block;
-  margin: 5px 10px;
-  padding: 10px 150px;
+  margin: 5px;
+  padding: 10px;
+  width: 70%;
 }
-fieldset .boton {
+
+textarea {
+  margin: 5px;
+  width: 70%;
+}
+
+.boton {
   display: inline;
-  padding: 10px 30px;
+  width: 100px;
+  margin: 5px;
   border-radius: 10%;
   border: 1px solid black;
   box-shadow: 1px 2px 3px #0c141d;
@@ -287,16 +311,16 @@ fieldset .boton {
   transition: 0.8s;
 }
 
-textarea {
-  margin: 5px 10px;
-  padding: 10px 122px 100px;
-  text-align: left;
-}
-
 .boton:hover {
   background-color: #6B181D;
   color: white;
   transition: 0.8s;
+}
+
+.contactoImg img {
+  height: 100%;
+  width: 80%;
+  margin: 5px 50px;
 }
 
 /* VIBRAR */
@@ -312,9 +336,8 @@ textarea {
     transform: translateX(10px);
   }
 }
-/* ------------ FOOTER GRID --------------- */
+/* ------------ FOOTER --------------- */
 .footer {
-  grid-area: footer;
   padding: 30px;
   border-top: 3px double white;
   background-color: rgb(34, 34, 34);
@@ -342,45 +365,6 @@ textarea {
   100% {
     opacity: 1;
     transform: rotateY(360deg);
-  }
-}
-/* ------------------- MEDIA QUERYS ---------------- */
-@media (min-width: 640px) {
-  .contenedorIndex {
-    grid-template-columns: 5% 1fr 1fr 5%;
-    grid-template-areas: "header header header header" "nav nav nav nav" ". main main ." "footer footer footer footer";
-  }
-  .contenedorGaleria {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "header header header" "nav nav nav" "main main main" "footer footer footer";
-    border: 2px solid black;
-  }
-  .contenedorImagenes {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "img1 img2 img3" "img4 img5 img6";
-  }
-  .contenedorContacto {
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "header header" "nav nav" "main main" "main main" "footer footer";
-  }
-  .contenedorPrincipal {
-    padding: 30px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "ubicacion     formulario" "contactoimg1  contactoimg2 ";
-  }
-  .ubicacion iframe {
-    width: 600px;
-    height: 450px;
-  }
-  .formulario fieldset {
-    height: 450px;
-    width: 200px;
-    border-style: none;
-  }
-  .contactoImg {
-    margin: 50px 100px;
   }
 }
 
