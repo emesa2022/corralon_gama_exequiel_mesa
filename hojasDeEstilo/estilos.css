@@ -347,6 +347,15 @@ textarea {
 .iconosRedes {
   padding: 20px;
 }
+.iconosRedes .iFacebook {
+  color: rgb(49, 69, 245);
+}
+.iconosRedes .iInstagram {
+  color: #fff;
+}
+.iconosRedes .iYoutube {
+  color: rgb(255, 0, 0);
+}
 
 .iconosRedes i {
   font-size: 25px;
