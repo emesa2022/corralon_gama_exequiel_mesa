@@ -338,7 +338,8 @@ textarea {
 
 
 /* ------------ FOOTER --------------- */
-$redes:( /*declaramos mapa redes*/
+$redes: (
+    /*declaramos mapa redes*/
     facebook: rgb(49, 69, 245),
     instagram: #fff,
     youtube: rgb(255, 0, 0)
@@ -353,17 +354,17 @@ $redes:( /*declaramos mapa redes*/
 
 .iconosRedes {
     padding: 20px;
-    
-    .iFacebook{
-        color: map-get($redes,facebook);
+
+    .iFacebook {
+        color: map-get($redes, facebook);
     }
 
-    .iInstagram{
-        color: map-get($redes,instagram);
+    .iInstagram {
+        color: map-get($redes, instagram);
     }
 
-    .iYoutube{
-        color: map-get($redes,youtube);
+    .iYoutube {
+        color: map-get($redes, youtube);
     }
 }
 
